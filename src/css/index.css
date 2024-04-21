@@ -1,0 +1,17 @@
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ededed;
+}
+
+#body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+a:hover {
+  color: #7e8c82;
+}
+

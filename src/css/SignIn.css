@@ -1,0 +1,68 @@
+.signInDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.loginHeader{
+    font-size: 4.5rem;
+    color: rgb(29, 29, 29);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.signInDiv-Main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.signInDiv-Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.signInDiv-Content form{
+    display: grid;
+    grid-template-columns: 1fr;    
+    width: 280px;
+    height: 25%;
+}
+
+.signInDiv-Content form > div{
+    display: flex;
+    justify-content: center;
+}
+
+#username, #password{
+    background-color: #ede7e7;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+.loginButton, .registerButton{
+    background-color: #ede7e7;
+    height: 44px;
+    width: 45%;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 4px 2px;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+

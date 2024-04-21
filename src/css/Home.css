@@ -1,0 +1,82 @@
+.bodyDiv {
+    height: inherit;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "top"
+                         "bottom";
+}
+
+.homeBanner {
+    grid-area: top;
+    background-image: url("/src/assets/buddhaskyResize.png");
+    background-size: cover;
+    background-position: 0% 40%;
+    height: 60vh;
+}
+
+.homeBannerInfo{
+    display: grid;
+    height: inherit;
+    width: 50%;
+    align-content: space-evenly;
+    margin-left: 10%;  
+}
+
+.cardHomeOne{
+    height: 10vh;
+    min-height: 100px;
+    width: 17vw !important;
+    min-width: 300px;
+    display: flex;
+    border-radius: 8em;
+    background-color: rgba(243, 237, 237, 0.6) !important;
+    border-color: rgba(130, 129, 129, 0.7) !important;
+}
+
+.cardHome{
+    grid-area: bottom;
+    height: 30vh;
+   
+}
+
+.cardHome h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: fit-content;
+    color: rgb(25, 25, 25);
+}
+
+.cardHomeOne:hover{
+    background-color: rgba(236, 228, 198, 0.9) !important;
+    border-color: rgba(130, 129, 129, 0.7) !important;
+}
+
+.cardHomeOne h1{
+    align-self: center;
+    margin: auto;
+    font-size: fit-content;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: rgb(25, 25, 25);
+}
+
+@media screen and (max-width: 768px) {
+    .bodyDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0px !important;
+    }
+
+    .homeBanner {
+        grid-area: top;
+        background-image: url("/src/assets/buddhaskyResize.png");
+        background-size: cover;
+        background-position: 45%;
+        height: 60vh;
+    }
+
+    .homeBannerInfo{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+}

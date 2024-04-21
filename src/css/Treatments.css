@@ -1,0 +1,101 @@
+
+.picOne {
+    max-width: 80vw;
+    max-height: 75vh;
+}
+
+.treatmentsDiv-Main {
+    height: 100%;
+    width: 100%;
+}
+
+.card-Container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: inherit;
+    background-color: rgb(219, 213, 213);
+}
+
+.card-body-description {
+    text-align: start;  
+    height: 100px !important;
+    overflow: clip !important;
+    background-color: rgb(238, 229, 182);
+}
+
+.card { 
+    text-align: center;
+    height: fit-content !important;
+    width: 350px;
+    margin: 10px;
+    border-color: rgba(255, 255, 255, 0.7) !important;
+    .card-link, .links{
+        display: none;
+    }
+    transition: all 400ms ease-in;
+}
+
+.card.active {
+    .card-body-description, .card-link, .links {
+        animation: fadeIn 100ms none;        
+        display: block;
+        height: fit-content !important;
+        background-color: rgb(235, 231, 226);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.list-group-item {
+    display: grid !important;
+    grid-template-areas: "a c";
+    background-color:rgba(229, 223, 223, 0.7) !important;
+    border-color: rgba(130, 129, 129, 0.7) !important;
+    p.p-price {
+        grid-area: a;
+        justify-content: start;
+        font-weight: 700;
+    }
+    p.p-duration{
+        grid-area: a;
+        justify-content: start;
+        font-weight: 700;
+    }
+
+    p {
+        display: flex;
+        grid-area: c;
+        justify-content: end;
+        font-weight: 500;
+    }
+}
+
+
+.links.card-body{
+    background-color: rgba(236, 226, 226, 0.7) !important;
+    .card-link{
+        
+        background-color: rgb(222, 215, 214);
+        color: rgb(40, 38, 38);
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 15px;        
+        transition: all 400ms ease-in;
+
+        &:hover{
+            background-color: rgb(161, 216, 133);
+            color: rgb(40, 38, 38);
+            font-weight: 500;
+        }
+    }
+}
